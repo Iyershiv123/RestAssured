@@ -28,10 +28,10 @@ public class Response_Script_Assignment
 	public void validate_positive_response_code_received() 
 	{
 		int statusCode = re.getStatusCode();
-		System.out.println("Status code is "+statusCode);
+//		System.out.println("Status code is "+statusCode);
 	
 		System.out.println("Status Code is: " + re.getStatusCode());
-		Assert.assertEquals(200, re.getStatusCode());
+		Assert.assertEquals(200, statusCode);
 		
 	}
 }
