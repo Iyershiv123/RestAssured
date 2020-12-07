@@ -20,9 +20,12 @@ public class NegativeScenarioAssignment
 		RestAssured.baseURI = "https://api.ratesapi.io";
 	}
 	
+	
+	
 	@When("posted with incorrect information")
 	public void posted_with_incorrect_information()
 	{
+		//This scenario is when we enter the incorrect URI.
 		getRe = RestAssured.get("/api");
 		
 	}
